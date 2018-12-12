@@ -1,0 +1,200 @@
+/* pages/personalCentre/personalCentre.wxss */
+
+page {
+  background: #fff;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+}
+
+.personal-top {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80rpx;
+  padding-top: 80rpx;
+  width: 100%;
+  background: #fea12e;
+  height: 350rpx;
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 50rpx;
+  padding-left: 30rpx;
+  font-size: 26rpx;
+  color: #fff;
+  height: 150rpx;
+}
+
+.personal-top image {
+  width: 150rpx;
+  height: 150rpx;
+  /* padding-left: 50rpx; */
+  border-radius: 50%;
+}
+
+.personal-middle {
+  margin-top: -120rpx;
+  width: 80%;
+  border-radius: 10px;
+  height: 160rpx;
+  background: #fff;
+  border: 1px solid rgb(236, 227, 227);
+  box-shadow: #fea12e 0rpx 0rpx 30rpx 1rpx;
+  padding: 20rpx;
+}
+
+.middle-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+}
+
+/* .personal-middle image {
+  width: 50rpx;
+  height: 50rpx;
+} */
+
+.acc {
+  font-size: 30rpx;
+  margin-left: 14rpx;
+  color: #646464;
+}
+
+.middle-bot {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: space-between;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #646464;
+  height: 20rpx;
+}
+
+.bot1 {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.bot2 {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.bot2-1 {
+  color: #fea12e;
+}
+
+.bot1-1 {
+  color: #fea12e;
+}
+
+.personal-option {
+  display: flex;
+  margin: auto;
+  width: 86%;
+  padding: 20rpx;
+  border-bottom: 1px solid #dfe3e6;
+  align-items: center; /*垂直居中*/
+}
+
+.arrow {
+  width: 15rpx;
+  height: 30rpx;
+}
+
+.ico-arrow {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.option-last {
+  align-items: center; /*垂直居中*/
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+}
+
+.option-last text {
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+
+.myToast {
+  width: 100%;
+  height: 100%;
+  line-height: 130rpx;
+  /* margin:80rpx 35%; */
+  border-radius: 20rpx;
+  background-color: rgb(114, 113, 113);
+  color: rgb(255, 255, 255);
+  font-size: 6rpx;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  opacity: 0.85;
+  top: 0rpx;
+}
+
+.myToast image {
+  width: 100%;
+  height: 100%;
+}
+
+.jinggao {
+  margin-left: 0rpx;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: -20rpx;
+}
+
+.topbook {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg {
+  width: 578rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30rpx;
+  line-height: 83rpx;
+}
+
+.moda {
+  font-size: 24rpx;
+}

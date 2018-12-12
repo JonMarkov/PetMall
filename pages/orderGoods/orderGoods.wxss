@@ -1,0 +1,188 @@
+page {
+  background: #f0f0f0;
+}
+
+/*圆点数字标注*/
+
+.notice {
+  width: 28rpx;
+  height: 28rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #ec9e14;
+  border-radius: 50%;
+  position: absolute;
+  float: left;
+  /* margin-top: 8rpx;*/
+  top: 5rpx;
+  font-size: 15rpx;
+  right: 30rpx;
+  line-height: 30rpx;
+}
+
+/*顶部导航样式*/
+
+.navbar {
+  flex: none;
+  display: flex;
+  background: #FEA12E;
+  z-index: 50;
+}
+
+.navbar .item {
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #fff;
+  font-family: Microsoft YaHei;
+}
+
+.navbar .item.active {
+  color:#50453b;
+  font-size: 24rpx;
+  font-family: Microsoft YaHei;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #ec9e14;
+  font-size: 24rpx;
+  color: #666;
+  font-family: Microsoft YaHei;
+}
+
+/* 模版样式 */
+.spacing {
+  margin-bottom: 20rpx;
+  background: #fff;
+  padding: 20rpx
+}
+
+.list-commodity {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20rpx 0rpx;
+}
+
+.orderNo {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.orderState {
+  font-size: 24rpx;
+  color: #FEA12E;
+}
+
+.list-middle {
+  padding: 20rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list-middle image {
+  width: 40%;
+  height: 200rpx;
+}
+
+.list-title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0rpx 40rpx;
+}
+
+.list-one {
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+}
+
+.orderTitle {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: bold
+}
+
+.orderAdver {
+  font-size: 24rpx;
+  color: #8b8b9a;
+}
+
+.list-settle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.orderNum {
+  font-size: 26rpx;
+  color: #9099a6
+}
+
+.orderMoney {
+  font-size: 26rpx;
+  color: #242021
+}
+.money{
+  font-size: 26rpx;
+  color: red
+}
+.list-last{
+  width: 100%;
+  height: 90rpx;
+}
+.list-last button{
+  margin-top: 20rpx;
+  float: right;
+  height: 68rpx;
+  width: 25%;
+  margin-left: 10rpx;
+}
+.button-one{
+  border: 1px solid #7a7a7a;
+  color: #333333;
+  background: #ffffff;
+  font-size: 26rpx
+}
+.button-two{
+border: 1px solid #7a7a7a;
+color:#333333; 
+background: #ffffff;
+font-size: 26rpx
+}
+.button-three{
+background: #ffffff;
+font-size: 26rpx;
+color: #8cd3f6;
+border: 1px solid #8cd3f6
+} 
+.zanwu{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+.zanwu text{
+  margin-top: 30rpx;
+  color: #ccc;
+  font-size: 30rpx
+}
+.zanwu image{
+  width: 320rpx;
+  height: 240rpx
+}

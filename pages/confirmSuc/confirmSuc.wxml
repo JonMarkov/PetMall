@@ -1,0 +1,26 @@
+<!-- 引入模版 star -->
+<view>
+  <view class='concent'>
+
+    <view class='conImg'>
+      <image src='../../../../images/assets/suc.png'></image>
+    </view>
+    <view class='conDet'>
+      <text class='conSuc'>支付成功!</text>
+      <text class='conCon'>稍后给您发货</text>
+    </view>
+
+  </view>
+  <view class='returnBtn'>
+    <button class='btn_two' bindtap='JumpHome'>返回首页</button>
+    <button class='btn_one' bindtap='JumpOrd'>查看订单</button>
+  </view>
+</view>
+<!-- <swiper autoplay='{{true}}' interval='2000' indicator-dots='{{true}}' circular='{{true}}'> -->
+  <!-- wx:key对于静态遍历不需要 -->
+  <!-- <swiper-item wx:for="{{homeImg}}" wx:key=''>
+    <view class="list-con" data-modity="{{item.goods_id}}">
+      <template is="list" data="{{...item}}"></template>
+    </view>
+  </swiper-item>
+</swiper> -->

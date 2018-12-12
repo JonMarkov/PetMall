@@ -1,0 +1,404 @@
+/* pages/personalCentre/personalCentre.wxss */
+
+page {
+  background: #f0f0f0;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+}
+
+.details-top {
+  display: flex;
+  flex-direction: row;
+  padding: 50rpx;
+  width: 100%;
+  background: #FEA12E;
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 50rpx;
+  padding-left: 30rpx;
+  font-size: 26rpx;
+  color: #fff;
+  height: 150rpx;
+}
+
+.details-top image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.details-middle {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.middle-left {
+  width: 30%;
+  padding: 30rpx;
+}
+
+.middle-left image {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.middle-right {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+
+.middle-right-top {
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+}
+
+.middle-right-top-title {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.middle-right-top-adv {
+  font-size: 24rpx;
+  color: #c6c6cd;
+}
+
+.middle-right-bottom {
+  margin-top: 100rpx;
+}
+
+.middle-right-bottom-price {
+  font-size: 30rpx;
+  color: #ff2727;
+}
+
+.middle-right-bottom-number {
+  font-size: 25rpx;
+  color: #9099a6;
+}
+
+.details-bottom {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.bottom-top {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bottom-top image {
+  width: 6rpx;
+  height: 46rpx;
+}
+
+.bottom-top text {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #a8a8a8;
+}
+
+.bottom-bottom {
+  padding: 20rpx 30rpx;
+}
+
+.bottom-bottom text {
+  color: #a6a6b1;
+  font-size: 24rpx;
+}
+
+.bottom-bottom .three-content {
+  color: #ff2727;
+  font-size: 30rpx;
+}
+
+.details-button {
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-button-top {
+  /* height: 100rpx; */
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.details-button-bottom {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #f0f0f0;
+  padding: 20rpx;
+}
+
+.details-button-bottom button {
+  width: 200rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.button-four {
+  border: 1px solid #ff5f00;
+  color: #ff5f00;
+  background: #fff;
+  font-size: 24rpx;
+}
+
+.button-one {
+  border: 1px solid #7a7a7a;
+  color: #333;
+  background: #fff;
+  font-size: 24rpx;
+}
+
+.button-two {
+  border: 1px solid #7a7a7a;
+  color: #333;
+  background: #fff;
+  font-size: 24rpx;
+}
+
+.button-three {
+  background: #fff;
+  font-size: 24rpx;
+  color: #8cd3f6;
+  border: 1px solid #8cd3f6;
+}
+
+/* 弹窗样式 */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  margin: -380rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+
+.bullet-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.title-head {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.bullet-activation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20rpx;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20rpx;
+}
+
+.bullet-activation text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.bullet-accPass {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  padding: 40rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.acc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acc text {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-size: 24rpx;
+  margin: 5rpx 0rpx;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.pass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pass text {
+  display: block;
+  text-align: center;
+  margin: 5rpx 0rpx;
+  color: #666;
+  font-size: 24rpx;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.acc-button {
+  border: 1px solid #eee;
+  background: #eee;
+  padding: 4rpx 20rpx;
+}
+
+.pass-button {
+  border: 1px solid #eee;
+  background: #eee;
+  padding: 4rpx 20rpx;
+}
+
+.bullet-instructions {
+  padding: 20rpx;
+  font-size: 20rpx;
+  color: #a8a8a8;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f9;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+  background-color: #fff;
+}
+
+.common-text {
+  font-size: 15px;
+  width: 20%;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: middle;
+  margin: 16px 12px;
+}
+
+.common-input {
+  width: 70%;
+  font-size: 13px;
+  height: 100%;
+}
+
+.btn-area {
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 90%;
+  align-items: center;
+}
+
+.btn-area button {
+  background: #0164a6;
+  color: white;
+  width: 151rpx;
+  font-size: 20rpx;
+  margin-right: -9px;
+  margin-top: -208rpx;
+}
+
+.login-container label {
+  margin-top: -20rpx;
+  margin-bottom: 20rpx;
+  justify-content: center;
+  display: flex;
+  font-size: 20rpx;
+  color: red;
+}
+.osMa{
+  width: 100%
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.7;
+}
+
+.modalDlg{
+width:578rpx;
+position:fixed;
+top:50%;
+left:0;
+z-index:9999;
+margin:-370rpx 85rpx;
+background-color:#fff;
+border-radius:36rpx;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:30rpx;
+line-height:83rpx;
+
+}
+.moda{
+  font-size: 24rpx
+}

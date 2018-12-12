@@ -1,0 +1,340 @@
+/* 全局样式 */
+
+page {
+  background: #fff;
+}
+
+/* 页面最大盒子样式 */
+
+swiper image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.content-det {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 头图 */
+
+.det-img {
+  width: 100%;
+  height: 350rpx;
+}
+
+/* 商品详细信息 */
+
+.det-info {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30rpx 0rpx;
+}
+
+.info-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up-new {
+  color: #ff2727;
+  font-size: 34rpx;
+}
+
+.up-old {
+  margin-left: 20rpx;
+  color: #bbb;
+  font-size: 20rpx;
+  text-decoration: line-through;
+}
+
+.info-centre {
+  color: #3e3e3e;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.info-down {
+  color: #8b8b9a;
+  font-size: 24rpx;
+}
+
+/* 选择面值 */
+
+.det-face {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30rpx 0rpx;
+}
+
+.face-up {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+/*购买份数  */
+
+.det-num {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+}
+
+.num-left {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.num-right {
+  width: 100%;
+  float: right;
+  margin-top: -40rpx;
+}
+
+/*增加数量主容器*/
+
+.stepper {
+  margin-left: auto;
+  width: 80px;
+  height: 30px;
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+.detailed {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  line-height: 30rpx;
+}
+
+.detailed_one {
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+.detailed_two {
+  font-size: 18rpx;
+  color: #ccc;
+}
+
+.detailed_three {
+  font-size: 14rpx;
+}
+
+/* 商品详细 */
+
+.det-modity {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+
+.modity {
+  font-size: 26rpx;
+  color: #b8b8b8;
+}
+
+.mac-info {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.modity-text {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+/* 购买按钮 */
+
+/* 列表信息 */
+
+.det-click {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20rpx;
+  position: fixed;
+  bottom: 0rpx;
+  padding: 0rpx;
+  /* padding: 10rpx; */
+  width: 100%;
+  background: #fff;
+}
+
+.det-click button {
+  height: 90rpx;
+  font-size: 26rpx;
+  padding-top: 15rpx;
+  font-weight: bold;
+  border-radius: 0rpx;
+  color: #fff;
+  border: 0px solid #fff;
+}
+
+.click-purchase {
+  background: #ff3030;
+  width: 60%;
+}
+
+.click-sharing {
+  background: #ff5f00;
+  width: 40%;
+}
+
+/* 李李李李 */
+
+.radio {
+  width: 35%;
+  border: 1px solid #fea12e;
+  border-radius: 4px;
+  background: #eaf7fd;
+  color: #fea12e;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+}
+
+.select-content-item text {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.select-img {
+  width: 38px;
+  height: 30px;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+radio .wx-radio-input {
+  border-radius: 3rpx;
+  height: 26rpx;
+  width: 26rpx;
+  border: none;
+  margin-top: -4rpx;
+  background-color: #eaf7fd;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* opacity: 1 *//* 自定义样式.... */
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  background-color: #fea12e;
+  border: none;
+  /* 自定义样式.... */
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.item-text {
+  height: 20rpx;
+  position: absolute;
+  top: 16rpx;
+  left: 116rpx;
+}
+
+.face-one {
+  border: 1px solid #ccc;
+  color: 333333;
+  border-radius: 6rpx;
+  width: 30%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30rpx;
+}
+
+.face-one-text {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.select-content {
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.selected {
+  border: 1px solid #2fb0ee;
+  color: #2fb0ee;
+  border-radius: 6rpx;
+  width: 30%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30rpx;
+}

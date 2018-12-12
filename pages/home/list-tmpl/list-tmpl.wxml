@@ -1,0 +1,14 @@
+<template name="list">
+  <view class='list-commodity' bindtap="bindToModity" data-sku="{{sku_id}}" data-modity="{{goods_id}}">
+    <image src='{{pic_list}}'></image>
+  </view>
+  <view class='list-content'>
+    <view class='list-left'>
+      <text class='list-title'>{{goods_name}}</text>
+      <text class='list-advertisement'>{{ad_words}}</text>
+    </view>
+    <view class='list-right'>
+      <text class='list-current'>￥{{sale_price}}</text>
+    </view>
+  </view>
+</template>

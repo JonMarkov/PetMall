@@ -1,0 +1,66 @@
+<view class='details-top'>
+  <image src='../../../images/assets/details.png'></image>
+  <view class='top-title'>
+    <text>{{status}}</text>
+    <text>订单编号：{{flow_no}}</text>
+  </view>
+</view>
+<!-- middle -->
+<view class='details-middle'>
+  <view class='middle-left'>
+    <image src='{{pic_url}}'></image>
+  </view>
+  <view class='middle-right'>
+    <view class='middle-right-top'>
+      <text class='middle-right-top-title'>{{goods_name}}</text>
+      <text class='middle-right-top-adv'>{{ad_words}}</text>
+    </view>
+    <view class='middle-right-bottom'>
+      <text class='middle-right-bottom-price'>￥ {{sale_price}} </text>
+      <text class='middle-right-bottom-number'> X {{goods_num}}</text>
+    </view>
+  </view>
+</view>
+<!-- bottom -->
+<view class='details-bottom'>
+  <view class='bottom-top'>
+    <image src='../../../images/assets/dd-ico.png'></image>
+    <text>订单信息</text>
+  </view>
+  <view class='bottom-bottom'>
+    <view class='bottom-bottom-one'>
+      <text class='one-title'>下单时间 : </text>
+      <text class='one-content'>{{create_date}}</text>
+    </view>
+    <view class='bottom-bottom-two' wx:if="{{oStatus == 1}}">
+      <text class='two-title'>支付时间 : </text>
+      <text class='two-content'>{{pay_time}}</text>
+    </view>
+    <view class='bottom-bottom-three'>
+      <text class='three-title'>订单金额 :  </text>
+      <text class='three-content'> ￥{{total}}</text>
+    </view>
+    <view class='bottom-bottom-four' wx:if="{{oStatus == 1}}">
+      <text class='four-title'>支付方式 : </text>
+      <text class='four-content'> 微信支付</text>
+    </view>
+  </view>
+</view>
+<view class="details-button-top"></view>
+<view class='details-button'>
+  <view class='details-button-bottom' wx:if="{{oStatus == 0 || oStatus == 1}}">
+    <button class='button-one' bindtap='cancellation' wx:if="{{oStatus == 0}}">取消订单</button>
+    <button class='button-four' bindtap="{{!buttonClicked?'bindToBuy':''}}" wx:if="{{oStatus == 0}}">去支付</button>
+    <button class='button-one' wx:if="{{oStatus == 1}}">申请退款</button>
+    <button class='button-two' bindtap="makePhoneCall" wx:if="{{oStatus == 1}}">联系客服</button>
+    <button class='button-three' bindtap="showDialogBtn" wx:if="{{oStatus == 1}}">查看物流</button>
+  </view>
+</view>
+
+<!-- kefu -->
+<view class="mask" wx:if="{{kefuShow}}"></view>
+<view class="modalDlg" wx:if="{{kefuShow}}">
+  <view bindtap="makePhoneCall1">客服一： 153 4015 8751</view>
+  <view bindtap="makePhoneCall2">客服二： 153 4016 2692</view>
+  <view class="moda" bindtap='go'>客服接听时间为早9点-晚6点；点我返回</view>
+</view>

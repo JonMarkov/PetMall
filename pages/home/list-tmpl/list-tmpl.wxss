@@ -1,0 +1,89 @@
+/* 列表信息 */
+
+.list-commodity {
+  display: flex;
+  flex-direction: row;
+  /* border-top: 1px solid #b0b0b0;
+  box-shadow: -1px 1px 2px #b0b0b0, 1px 1px 2px #b0b0b0; */
+}
+
+.list-commodity image {
+  width: 100%;
+  height: 350rpx;
+  border-top-left-radius: 6rpx;
+  border-top-right-radius: 6rpx;
+}
+
+.list-content {
+  display: -webkit-flex;
+  flex-direction: row;
+  display: flex;
+  margin: 20rpx 20rpx;
+  line-height: 50rpx;
+}
+
+.list-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.list-title {
+  font-size: 30rpx;
+  color: #333;
+  justify-content: flex-start;
+}
+
+.list-advertisement {
+  font-size: 24rpx;
+  color: #8b8b9a;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.list-right {
+  flex: 1;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+}
+
+.list-current {
+  font-size: 35rpx;
+  color: #ff2727;
+}
+
+.list-original {
+  font-size: 24rpx;
+  color: #a8a8a8;
+  text-decoration: line-through;
+}
+
+.business-click {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background: #f7f9fa;
+  padding: 20rpx;
+}
+
+.business-click button {
+  width: 260rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  padding-top: 0rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.business-purchase {
+  background: #ff3030;
+}
+
+.business-sharing {
+  background: #ff5f00;
+}

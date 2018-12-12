@@ -1,0 +1,38 @@
+<view class="container">
+  <form bindsubmit="createOrder" report-submit="true">
+    <view class="address-box">
+      <view class="add-address" wx:if='{{curAddressData.length == 0}}'>
+        <view class="title" bindtap="addAddress">新增收货地址</view>
+      </view>
+
+      <view class="show-address" wx:if='{{curAddressData !=0}}' bindtap="selectAddress">
+        <view class="name-tel">{{curAddressData.name}} {{curAddressData.phone}}</view>
+        <view class="addr-text">{{curAddressData.address}}</view>
+      </view>
+    </view>
+    <view class="goods-list">
+      <view class="list-title">商品列表</view>
+      <view class="a-goods" wx:for-items="{{goodsList}}" wx:key="{{index}}">
+        <view class="img-box">
+          <image src="{{item.cover}}" class="img" />
+        </view>
+        <view class="text-box">
+          <view class="arow arow01">
+            <view class="goods-name">{{item.goods_name}}</view>
+            <view class="goods-price">¥ {{item.sale_price}}</view>
+          </view>
+          <view class="arow">
+            <view class="goods-label">{{item.ad_words}}</view>
+            <view class="goods-num">x {{item.goods_num}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="jiesuan-box">
+      <view class="left-price">
+        <view class="total">合计：¥ {{allGoodsAndYunPrice}}</view>
+      </view>
+      <button class="to-pay-btn" bindtap='submitP'>确认支付</button>
+    </view>
+  </form>
+</view>

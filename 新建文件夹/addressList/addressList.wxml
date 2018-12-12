@@ -1,0 +1,19 @@
+<view class="scroll" scroll-y="true">
+  <view wx:for="{{addressList}}" wx:key="">
+    <view bindlongtap="longTap" class="product-name-wrap">
+      <view class="ui-list-item-info"  data-index='{{index}}' bindtap="singleTap">
+        {{item.name}}
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text> {{item.phone}}
+      </view>
+      <view class="ui-list-item-address">
+        <p bindtap="singleTap" data-index='{{index}}' data->{{item.province}}{{item.city}}{{item.area}}{{item.address}}</p>
+        <view class="ui-list-item-time">
+          <image class="ui-list-item-del" src='/images/icon/del.png' data-index="{{index}}" bindtap="delAddress"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="add-address" bindtap="addAddress">
+  <p>新增地址</p>
+</view>

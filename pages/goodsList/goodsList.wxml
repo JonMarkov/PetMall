@@ -1,0 +1,33 @@
+<!-- 引入模版 star -->
+<import src="../home/list-tmpl/list-tmpl.wxml" />
+<view id='box'>
+  <input type='text' name="search" placeholder='请输入关键字' bindinput='goodsListInput'></input>
+  <view id='search' bindtap='searchFn'>搜索</view>
+</view>
+<view class='dropDown'>
+  <view class='dropTitle' bindtap="compreClick">
+    <text>{{statusText}}</text>
+    <image src='../../../images/icon/up_arrow.png' wx:if="{{sortStateUp}}"></image>
+    <image src='../../../images/icon/down_arrow.png' wx:if="{{sortStateDown}}"></image>
+  </view>
+</view>
+<view class='layer' wx:if="{{statusWin}}">
+  <view class='layer-sort' bindtap='priceRise'>
+    <text>按照价格升序排序</text>
+  </view>
+  <view class='layer-sort' bindtap='priceDecline'>
+    <text>按照价格降序排序</text>
+  </view>
+  <view class='layer-sort' bindtap='salesRise'>
+    <text>按照销量升序排序</text>
+  </view>
+  <view class='layer-sort' bindtap='salesDecline'>
+    <text>按照销量降序排序</text>
+  </view>
+</view>
+<!-- 内容区域 star 此处内容需遍历 -->
+<block wx:for="{{homeCom}}" wx:key="">
+  <view class="list-con" data-sku="{{item.sku_id}}" data-modity="{{item.goods_id}}">
+    <template is="list" data="{{...item}}"></template>
+  </view>
+</block>

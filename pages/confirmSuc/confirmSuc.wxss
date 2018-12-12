@@ -1,0 +1,102 @@
+/* css部分引入模版 */
+
+page {
+  background: #fffff0;
+}
+
+.concent {
+  background: #fff9;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  padding: 80rpx 40rpx;
+}
+
+.conImg {
+  width: 18%;
+}
+
+.conDet {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  line-height: 100rpx;
+}
+
+.conImg image {
+  width: 100rpx;
+  height: 210rpx;
+}
+
+.conSuc {
+  font-size: 42rpx;
+  margin-top: 10rpx;
+  color: #ef6a1d
+}
+
+.conCon {
+  font-size: 30rpx;
+  color: #8b8b99
+}
+
+.wheel {
+  margin-top: 30rpx;
+  background: #f0f0f0;
+  padding-top: 20rpx;
+  height: 800rpx;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 280rpx;
+}
+
+.recommend {
+  padding-left: 30rpx;
+  line-height: 30rpx;
+}
+
+.recTitle {
+  font-size: 24rpx;
+}
+
+.recMoney {
+  font-size: 18rpx;
+}
+.wheel {
+  margin-top: 30rpx;
+  background: #f0f0f0;
+  padding-top: 20rpx;
+  height: 800rpx;
+}
+
+swiper{
+  height: 550rpx;
+  background: #fff;
+  margin-top: 30rpx
+}
+swiper image {
+  width: 100%;
+  height: 350rpx;
+}
+.returnBtn{
+  background:#fff;
+padding-bottom:60rpx;
+display: flex;
+flex-direction: row
+}
+.returnBtn button{
+
+width:40%;
+color:#fff;
+}
+.btn_one{
+  background:#FEA12E;
+}
+.btn_two{
+  background: #ccc
+}

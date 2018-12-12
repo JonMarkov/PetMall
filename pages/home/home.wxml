@@ -1,0 +1,26 @@
+<!-- 引入模版 star -->
+<import src="list-tmpl/list-tmpl.wxml" />
+<!-- 轮播 star -->
+<swiper autoplay='{{true}}' interval='2000' indicator-dots='{{true}}' circular='{{true}}' current="{{swiperCurrent}}" bindchange="swiperChange">
+  <!-- wx:key对于静态遍历不需要 -->
+  <swiper-item wx:for="{{homeImg}}" wx:key=''>
+    <image src='{{item.imgUrl}}' bindtap="ruleshow"></image>
+  </swiper-item>
+</swiper>
+<!-- 频道入口 数据不更改，写死即可 -->
+<view class='clan' wx:if="{{frequency}}">
+  <view class='clan-cate' data-chick="{{item.frequencyId}}" bindtap='bindToCharge' wx:for="{{frequency}}" wx:key="">
+    <image src='{{item.frequencyImg}}'></image>
+    <text>{{item.frequencyName}}</text>
+  </view>
+</view>
+<view class='message'></view>
+<!-- 内容区域 star 此处内容需遍历 -->
+<block wx:for="{{homeCom}}" wx:key="">
+  <view class="list-con" data-sku="{{item.sku_id}}" data-modity="{{item.goods_id}}">
+    <template is="list" data="{{...item}}"></template>
+  </view>
+</block>
+<view class="myToast" hidden="{{nullHouse}}" bindtap='ruleHide'>
+  <image src='../../images/popup/shrule.jpg' bindtap='ruleHide'></image>
+</view>

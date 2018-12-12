@@ -1,0 +1,42 @@
+<!-- 外层pages -->
+<view class='pages'>
+ 
+  <!-- 头部 -->
+  <view class='head'>
+    <image class='head_img' src='../../image/list_img.png'></image>
+    <label class='head_name'>已签收</label>
+    <label class='head_title'>圆通速递：8889993221341234</label>
+    <label class='head_tel_name'>官方客服:95559</label>
+    <label class="head_tell">物流客服</label>
+  </view>
+  <!-- 追踪 -->
+  <view class='logisit' wx:for="{{list}}" wx:key="key">
+    <!-- 列表 -->
+    <view class='list'>
+      <!-- 判断列表中id==0并且长度大于1  已完成ICON带线 -->
+      <image class='list_img_tab1' wx:if="{{item.id==0&&list.length>1}}" src='../../image/tabw.png'></image>
+      <!-- 判断列表中id==0并且长度小于1  已完成ICON无线 -->
+      <image class='list_img' wx:if="{{item.id==0&&list.length==1}}" src='../../image/111.png'></image>
+      <!-- 判断列表中id==1  灰色ICON -->
+      <image class='list_imgs' wx:if="{{item.id==1}}" src='../../image/writes.png'></image>
+      <!-- 判断列表中id==2  灰色ICON -->
+      <image class='list_imgs' wx:if="{{item.id==2}}" src='../../image/writes.png'></image>
+      <!-- 判断列表中id==3  飞机ICON -->
+      <image class='list_img' wx:if="{{item.id==3}}" src='../../image/222.png'></image>
+      <view class='list_name_page'>
+        <!-- 列表名称 -->
+        <lable class='list_name'>{{item.name}}</lable>
+      </view>
+      <!-- 时间 -->
+      <view class='list_dates_page'>{{item.dates}}</view>
+ 
+    </view>
+    <!-- 列表底线 -->
+    <view class='writes'></view>
+ 
+ 
+  </view>
+ 
+ 
+ 
+</view>

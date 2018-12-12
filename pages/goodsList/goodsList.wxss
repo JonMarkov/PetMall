@@ -1,0 +1,125 @@
+/* css部分引入模版 */
+@import "../home/list-tmpl/list-tmpl.wxss";
+
+page {
+  background: #fff;
+}
+
+swiper image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.clan {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.list-con {
+  margin-bottom: 20rpx;
+  border: 1px solid #e5e5e5;
+  border-radius: 6rpx;
+  width: 96%;
+  text-align: center;
+  margin: auto;
+  /* margin-left: 30rpx; */
+  margin-top: 20rpx;
+}
+
+.clan-cate {
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.clan-cate image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.clan-cate text {
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  color: #cbcbcb;
+}
+
+/* 搜索框 */
+
+#box {
+  width: 82%;
+  height: 1rpx;
+  margin: 30px auto;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+}
+
+#box input {
+  width: 60%;
+  border: 1px solid #e2e2e2;
+  height: 30px;
+  float: left;
+  /* background-image: url(http://www.36524china.com/images/dian01.png); */
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 5px center;
+  padding: 0 0 0 40px;
+}
+
+#search {
+  width: 78px;
+  height: 32px;
+  float: right;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+/* xiala */
+
+.dropDown {
+  width: 86%;
+  padding: 30rpx 50rpx;
+  border-bottom: 1px solid #cbcbcb;
+  border-top: 1px solid #cbcbcb;
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
+  font-size: 26rpx;
+}
+
+.dropTitle {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  color: #FEA12E;
+}
+
+.dropTitle image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 14rpx;
+}
+
+.layer {
+  background: #fff;
+  position: absolute;
+  opacity: 0.9;
+  width: 100%;
+  /* height: 600rpx; */
+  margin-top: -46rpx;
+  line-height: 70rpx;
+}
+
+.layer-sort {
+  /* width: 80%; */
+  color: #929191;
+  font-size: 24rpx;
+  padding: 10rpx 50rpx;
+  border-bottom: 1px solid #e7e4e4;
+}

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/orderConfirm/orderConfirm",
+    "pages/addressList/addressList",
+    "pages/myCenter/myCenter",
+    "pages/commodityDet/commodityDet",
+    "pages/goodsList/goodsList",
+    "pages/home/home",
+    "pages/orderGoods/orderGoods",
+    "pages/channel/channel",
+    "pages/classify/classify",
+    "pages/ShopCart/ShopCart",
+    "pages/address/address",
+    "pages/logistics/logistics",
+    "pages/details/details",
+    "pages/confirmSuc/confirmSuc"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#7a43b6",
+    "navigationBarTextStyle": "#000",
+    "navigationBarTitleText": "瑞琦e宠"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#bdbdbd",
+    "selectedColor": "#FEA12E",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tobar/img_home.png",
+        "selectedIconPath": "/images/tobar/img_home_selected.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "/images/tobar/img_sort.png",
+        "selectedIconPath": "/images/tobar/img_sort_selected.png"
+      },
+      {
+        "pagePath": "pages/ShopCart/ShopCart",
+        "text": "购物车",
+        "iconPath": "/images/tobar/img_order.png",
+        "selectedIconPath": "/images/tobar/img_order_selected.png"
+      },
+      {
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "个人中心",
+        "iconPath": "/images/tobar/img_personal.png",
+        "selectedIconPath": "/images/tobar/img_personal_selected.png"
+      }
+    ]
+  }
+}

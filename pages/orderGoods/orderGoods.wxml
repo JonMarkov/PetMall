@@ -1,0 +1,60 @@
+<import src="list-tmpl/list-tmpl.wxml" />
+<!--导航菜单-->
+<view class="navbar" style=" z-index:50">
+  <!--选项卡标题循环-->
+  <view wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">
+    <view class="notice" wx:if="{{count[index]>0}}">{{count[index]}}</view>
+    {{item}}
+    <!--<text  bindtap="navbarTap">{{item}}</text>-->
+  </view>
+</view>
+
+<!--全部-->
+<view hidden="{{currentTab !== 0}}" id="one" class='one'>
+  <view wx:if="{{all == 0}}" class='zanwu'>
+    <image src='../../images/assets/zanwu.png'></image>
+    <text>暂无订单</text>
+  </view>
+  <block wx:for="{{all}}" class="spacing">
+    <template is="list" data="{{...item}}" />
+  </block>
+</view>
+
+
+<!--待支付 0-->
+<view hidden="{{currentTab !== 1}}" id="one" class='one'>
+  <view wx:if="{{payable==0}}" class='zanwu'>
+    <image src='../../images/assets/zanwu.png'></image>
+    <text>暂无订单</text>
+  </view>
+  <block wx:for="{{payable}}" class="spacing">
+    <template is="list" data="{{...item}}" />
+  </block>
+</view>
+
+<!--待发货 1-->
+<view hidden="{{currentTab !== 2}}" id="one" class='one'>
+  <view wx:if="{{pendingReceipt==0}}" class='zanwu'>
+    <image src='../../images/assets/zanwu.png'></image>
+    <text>暂无订单</text>
+  </view>
+  <block wx:for="{{pendingReceipt}}" class="spacing">
+    <template is="list" data="{{...item}}" />
+  </block>
+</view>
+
+<!--待提取 1-->
+<!-- <view hidden="{{currentTab !== 3}}" id="one" class='one'>
+  <template is="list" data="{{maintainRecordlist}}" /> 
+</view> -->
+
+<!-- 已完成 2 -->
+<view hidden="{{currentTab !== 3}}" id="one" class='one'>
+  <view wx:if="{{completed==0}}" class='zanwu'>
+    <image src='../../images/assets/zanwu.png'></image>
+    <text>暂无订单</text>
+  </view>
+  <block wx:for="{{completed}}" class="spacing">
+    <template is="list" data="{{...item}}" />
+  </block>
+</view>
