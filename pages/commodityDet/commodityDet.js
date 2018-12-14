@@ -172,6 +172,7 @@ Page({
   },
   // 进入页面遍历所需要信息传入页面函数回调函数
   dityDetCallback: function(res) {
+    console.log(res)
     // 商品所需信息
     var goods_info = res.goods_info;
     //SkU商品信息
