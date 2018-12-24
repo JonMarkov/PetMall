@@ -59,6 +59,9 @@
 
   <!-- 按钮点击 -->
   <view class='det-click'>
+  
+  <image src="../../images/icon/GW.png" class="GW" bindtap='addIcon'></image>
+
     <button class='click-purchase' bindtap="{{!buttonClicked?'bindToBuy':''}}">立即购买</button>
     <button class='click-sharing' bindtap='toAddCard'>加入购物车</button>
   </view>

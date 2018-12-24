@@ -417,10 +417,10 @@ Page({
         content: '请输入姓名',
         showCancel: false,
       })
-    } else if (mobile == '') {
+    } else if (mobile == '' || mobile.length < 11) {
       wx.showModal({
         title: '提示',
-        content: '请输入手机号',
+        content: '请输入正确的手机号',
         showCancel: false,
       })
     } else if (proValQh == '') {

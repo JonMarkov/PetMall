@@ -21,9 +21,9 @@
       </view>
       <view class='bot2'>
         <text class='bot2-1'>
-        ￥ {{bonus_amount}}
+        {{bonus_amount}}
         </text>
-        <text class='bot2-2'>已返佣金额</text>
+        <text class='bot2-2'>积分</text>
       </view>
     </view>
   </view>
@@ -31,7 +31,7 @@
 <!-- 联系客服 -->
 <view class='personal-option'>
   <image src='../../images/icon/kf.png' class='ico-arrow'></image>
-  <view class='option-last' bindtap="submit">
+  <view class='option-last' bindtap="makePhoneCall1">
     <text>联系客服</text>
     <image src='../../images/icon/arrow.png' class='arrow'></image>
   </view>

@@ -222,3 +222,8 @@ form {
   color: #e64340;
   text-align: right;
 }
+.yunfei{
+  font-size: 26rpx;
+  margin-left: 32rpx;
+  margin-top: 10rpx
+}

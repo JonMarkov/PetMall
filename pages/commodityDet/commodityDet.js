@@ -15,6 +15,11 @@ Page({
     relation_id: 1,
     stock: 1
   },
+  addIcon:function(){
+    wx.switchTab({
+      url: '/pages/ShopCart/ShopCart',
+    })
+  },
   /* 点击减号 */
   bindMinus: function() {
     var num = this.data.num;

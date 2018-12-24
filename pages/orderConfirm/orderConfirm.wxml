@@ -27,7 +27,9 @@
           </view>
         </view>
       </view>
+          <view class='yunfei'><text>运费：10元</text></view>
     </view>
+
     <view class="jiesuan-box">
       <view class="left-price">
         <view class="total">合计：¥ {{allGoodsAndYunPrice}}</view>
